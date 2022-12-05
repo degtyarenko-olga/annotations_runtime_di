@@ -14,9 +14,9 @@ public class Math {
     public double division(double x, double y) {
         if (y == 0) {
             logger.log(Level.INFO, "На ноль делить нельзя");
-        } else {
+        } else
             return x / y;
-        }
+
         return 0;
     }
 

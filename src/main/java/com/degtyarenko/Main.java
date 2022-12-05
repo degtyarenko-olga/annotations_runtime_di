@@ -28,17 +28,17 @@ public class Main {
                     System.out.println("Введите 2е число : ");
                     double value2 = scan.nextDouble();
                     if ("1".equals(res)) {
-                        System.out.println(mainController.getMath().addition(value1, value2));
+                        System.out.println("Сумма равна = " + mainController.getMath().addition(value1, value2));
                         System.out.println("-----------------------");
                         start();
                         break;
                     } else if ("2".equals(res)) {
-                        System.out.println(mainController.getMath().difference(value1, value2));
+                        System.out.println("Разница равна = " + mainController.getMath().difference(value1, value2));
                         System.out.println("-----------------------");
                         start();
                         break;
                     } else if ("3".equals(res)) {
-                        System.out.println(mainController.getMath().division(value1, value2));
+                        System.out.println("Деление равно = " + mainController.getMath().division(value1, value2));
                         System.out.println("-----------------------");
                         start();
                         break;
