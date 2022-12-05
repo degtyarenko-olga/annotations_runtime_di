@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public class MyProcessor {
 
-    static void inject(MainController mainController) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+    public static void inject(MainController mainController) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         for (Field field : mainController.getClass().getDeclaredFields()) {
             if (field.isAnnotationPresent(InjectClass.class)) {
                 Constructor<?> constructor = field.getType().getDeclaredConstructor();
